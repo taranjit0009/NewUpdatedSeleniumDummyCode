@@ -1,0 +1,109 @@
+2024-10-21 16:42:29,092 :INFO :test_static_dropdown :successfully filled the fields
+2024-10-21 16:42:36,443 :INFO :test_static_dropdown :successfully filled the fields
+2024-10-21 16:42:36,443 :INFO :test_static_dropdown :successfully filled the fields
+2024-10-21 22:57:22,816 :INFO :test_upload_download :
+2024-10-21 22:58:02,751 :INFO :test_upload_download :
+2024-10-21 22:58:35,614 :INFO :test_upload_download :
+2024-10-21 23:02:23,220 :INFO :test_upload_download :File uploaded successfully: 
+2024-10-21 23:07:36,928 :INFO :test_upload_download :File uploaded successfully: None
+2024-10-21 23:09:20,384 :INFO :test_upload_download :File uploaded successfully: None
+2024-10-21 23:10:20,526 :INFO :test_upload_download :File uploaded successfully: None
+2024-10-21 23:20:03,701 :INFO :test_upload_download :File uploaded successfully: None
+2024-10-21 23:30:19,246 :ERROR :test_upload_download :assert False
+ +  where False = is_displayed()
+ +    where is_displayed = <selenium.webdriver.remote.webelement.WebElement (session="448bb46436255bff50931b92928008b0", element="f.35930F0CE0B17AB2A57596A83664CCBE.d.68B66AEE38999951846C16A562E21FCE.e.20")>.is_displayed
+ +      where <selenium.webdriver.remote.webelement.WebElement (session="448bb46436255bff50931b92928008b0", element="f.35930F0CE0B17AB2A57596A83664CCBE.d.68B66AEE38999951846C16A562E21FCE.e.20")> = find_element(*('xpath', "//div[contains(text(),'Updated Excel Data Successfully.')]"))
+ +        where find_element = <selenium.webdriver.chrome.webdriver.WebDriver (session="448bb46436255bff50931b92928008b0")>.find_element
+ +          where <selenium.webdriver.chrome.webdriver.WebDriver (session="448bb46436255bff50931b92928008b0")> = TestUploadDownload.driver
+Traceback (most recent call last):
+  File "D:\PytestPython\DummySeleniumProject\tests\test_upload_dowloadWorks.py", line 37, in test_upload_download
+    assert TestUploadDownload.driver.find_element(*toast_locator).is_displayed()
+AssertionError: assert False
+ +  where False = is_displayed()
+ +    where is_displayed = <selenium.webdriver.remote.webelement.WebElement (session="448bb46436255bff50931b92928008b0", element="f.35930F0CE0B17AB2A57596A83664CCBE.d.68B66AEE38999951846C16A562E21FCE.e.20")>.is_displayed
+ +      where <selenium.webdriver.remote.webelement.WebElement (session="448bb46436255bff50931b92928008b0", element="f.35930F0CE0B17AB2A57596A83664CCBE.d.68B66AEE38999951846C16A562E21FCE.e.20")> = find_element(*('xpath', "//div[contains(text(),'Updated Excel Data Successfully.')]"))
+ +        where find_element = <selenium.webdriver.chrome.webdriver.WebDriver (session="448bb46436255bff50931b92928008b0")>.find_element
+ +          where <selenium.webdriver.chrome.webdriver.WebDriver (session="448bb46436255bff50931b92928008b0")> = TestUploadDownload.driver
+2024-10-21 23:30:49,587 :ERROR :test_upload_download :assert False
+ +  where False = is_displayed()
+ +    where is_displayed = <selenium.webdriver.remote.webelement.WebElement (session="428b0b8f697b130cf7785d4c6fc92b28", element="f.F1A107564C6829592E1FB6702E02B39F.d.2872F6C18537DFC6469F923BEC5EAD75.e.20")>.is_displayed
+ +      where <selenium.webdriver.remote.webelement.WebElement (session="428b0b8f697b130cf7785d4c6fc92b28", element="f.F1A107564C6829592E1FB6702E02B39F.d.2872F6C18537DFC6469F923BEC5EAD75.e.20")> = find_element(*('xpath', "//div[contains(text(),'Updated Excel Data Successfully.')]"))
+ +        where find_element = <selenium.webdriver.chrome.webdriver.WebDriver (session="428b0b8f697b130cf7785d4c6fc92b28")>.find_element
+ +          where <selenium.webdriver.chrome.webdriver.WebDriver (session="428b0b8f697b130cf7785d4c6fc92b28")> = TestUploadDownload.driver
+Traceback (most recent call last):
+  File "D:\PytestPython\DummySeleniumProject\tests\test_upload_dowloadWorks.py", line 37, in test_upload_download
+    assert TestUploadDownload.driver.find_element(*toast_locator).is_displayed()
+AssertionError: assert False
+ +  where False = is_displayed()
+ +    where is_displayed = <selenium.webdriver.remote.webelement.WebElement (session="428b0b8f697b130cf7785d4c6fc92b28", element="f.F1A107564C6829592E1FB6702E02B39F.d.2872F6C18537DFC6469F923BEC5EAD75.e.20")>.is_displayed
+ +      where <selenium.webdriver.remote.webelement.WebElement (session="428b0b8f697b130cf7785d4c6fc92b28", element="f.F1A107564C6829592E1FB6702E02B39F.d.2872F6C18537DFC6469F923BEC5EAD75.e.20")> = find_element(*('xpath', "//div[contains(text(),'Updated Excel Data Successfully.')]"))
+ +        where find_element = <selenium.webdriver.chrome.webdriver.WebDriver (session="428b0b8f697b130cf7785d4c6fc92b28")>.find_element
+ +          where <selenium.webdriver.chrome.webdriver.WebDriver (session="428b0b8f697b130cf7785d4c6fc92b28")> = TestUploadDownload.driver
+2024-10-21 23:32:47,941 :ERROR :test_upload_download :Message: javascript error: Unexpected token '*'
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61576B095+29557]
+	(No symbol) [0x00007FF6156DFA50]
+	(No symbol) [0x00007FF61559B56A]
+	(No symbol) [0x00007FF6155A213E]
+	(No symbol) [0x00007FF6155A47F4]
+	(No symbol) [0x00007FF6156397F0]
+	(No symbol) [0x00007FF61561718A]
+	(No symbol) [0x00007FF61563851C]
+	(No symbol) [0x00007FF615616F33]
+	(No symbol) [0x00007FF6155E116F]
+	(No symbol) [0x00007FF6155E22D1]
+	GetHandleVerifier [0x00007FF615A9C96D+3378253]
+	GetHandleVerifier [0x00007FF615AE8497+3688311]
+	GetHandleVerifier [0x00007FF615ADD1CB+3642539]
+	GetHandleVerifier [0x00007FF61582A6B6+813462]
+	(No symbol) [0x00007FF6156EAB5F]
+	(No symbol) [0x00007FF6156E6B74]
+	(No symbol) [0x00007FF6156E6D10]
+	(No symbol) [0x00007FF6156D5C1F]
+	BaseThreadInitThunk [0x00007FFE56BBDBE7+23]
+	RtlUserThreadStart [0x00007FFE57745A4C+44]
+Traceback (most recent call last):
+  File "D:\PytestPython\DummySeleniumProject\tests\test_upload_dowloadWorks.py", line 39, in test_upload_download
+    message = TestUploadDownload.driver.execute_script("*return arguments[0].innerText;", toast_locator)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 414, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: Unexpected token '*'
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61576B095+29557]
+	(No symbol) [0x00007FF6156DFA50]
+	(No symbol) [0x00007FF61559B56A]
+	(No symbol) [0x00007FF6155A213E]
+	(No symbol) [0x00007FF6155A47F4]
+	(No symbol) [0x00007FF6156397F0]
+	(No symbol) [0x00007FF61561718A]
+	(No symbol) [0x00007FF61563851C]
+	(No symbol) [0x00007FF615616F33]
+	(No symbol) [0x00007FF6155E116F]
+	(No symbol) [0x00007FF6155E22D1]
+	GetHandleVerifier [0x00007FF615A9C96D+3378253]
+	GetHandleVerifier [0x00007FF615AE8497+3688311]
+	GetHandleVerifier [0x00007FF615ADD1CB+3642539]
+	GetHandleVerifier [0x00007FF61582A6B6+813462]
+	(No symbol) [0x00007FF6156EAB5F]
+	(No symbol) [0x00007FF6156E6B74]
+	(No symbol) [0x00007FF6156E6D10]
+	(No symbol) [0x00007FF6156D5C1F]
+	BaseThreadInitThunk [0x00007FFE56BBDBE7+23]
+	RtlUserThreadStart [0x00007FFE57745A4C+44]
+
+2024-10-21 23:34:53,600 :INFO :test_upload_download :File uploaded successfully: None
+2024-10-22 01:34:57,685 :INFO :test_upload_download :File uploaded successfully: Updated Excel Data Successfully.
+2024-10-22 01:35:07,707 :ERROR :test_upload_download :WebElement.get_attribute() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "D:\PytestPython\DummySeleniumProject\tests\test_upload_dowloadWorks.py", line 44, in test_upload_download
+    price_attribute = TestUploadDownload.driver.find_element(By.XPATH,"//div[text()='Price']").get_attribute()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: WebElement.get_attribute() missing 1 required positional argument: 'name'

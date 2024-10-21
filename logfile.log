@@ -1,0 +1,221 @@
+2024-10-21 23:20:32,334 :INFO :test_upload_download :File uploaded successfully: None
+2024-10-21 23:31:36,618 :ERROR :test_upload_download :assert False
+ +  where False = is_displayed()
+ +    where is_displayed = <selenium.webdriver.remote.webelement.WebElement (session="3a6adcd2b139ee1d26d6695194504a25", element="f.98D2BB20CABB1664E544155C05E2BB91.d.EEBA7C1995DA1C6BC259C46F1AA53338.e.20")>.is_displayed
+ +      where <selenium.webdriver.remote.webelement.WebElement (session="3a6adcd2b139ee1d26d6695194504a25", element="f.98D2BB20CABB1664E544155C05E2BB91.d.EEBA7C1995DA1C6BC259C46F1AA53338.e.20")> = find_element(*('xpath', "//div[contains(text(),'Updated Excel Data Successfully.')]"))
+ +        where find_element = <selenium.webdriver.chrome.webdriver.WebDriver (session="3a6adcd2b139ee1d26d6695194504a25")>.find_element
+ +          where <selenium.webdriver.chrome.webdriver.WebDriver (session="3a6adcd2b139ee1d26d6695194504a25")> = TestUploadDownload.driver
+Traceback (most recent call last):
+  File "D:\PytestPython\DummySeleniumProject\tests\test_upload_dowloadWorks.py", line 37, in test_upload_download
+    assert TestUploadDownload.driver.find_element(*toast_locator).is_displayed()
+AssertionError: assert False
+ +  where False = is_displayed()
+ +    where is_displayed = <selenium.webdriver.remote.webelement.WebElement (session="3a6adcd2b139ee1d26d6695194504a25", element="f.98D2BB20CABB1664E544155C05E2BB91.d.EEBA7C1995DA1C6BC259C46F1AA53338.e.20")>.is_displayed
+ +      where <selenium.webdriver.remote.webelement.WebElement (session="3a6adcd2b139ee1d26d6695194504a25", element="f.98D2BB20CABB1664E544155C05E2BB91.d.EEBA7C1995DA1C6BC259C46F1AA53338.e.20")> = find_element(*('xpath', "//div[contains(text(),'Updated Excel Data Successfully.')]"))
+ +        where find_element = <selenium.webdriver.chrome.webdriver.WebDriver (session="3a6adcd2b139ee1d26d6695194504a25")>.find_element
+ +          where <selenium.webdriver.chrome.webdriver.WebDriver (session="3a6adcd2b139ee1d26d6695194504a25")> = TestUploadDownload.driver
+2024-10-21 23:33:16,686 :ERROR :test_upload_download :Message: javascript error: Unexpected token '*'
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61576B095+29557]
+	(No symbol) [0x00007FF6156DFA50]
+	(No symbol) [0x00007FF61559B56A]
+	(No symbol) [0x00007FF6155A213E]
+	(No symbol) [0x00007FF6155A47F4]
+	(No symbol) [0x00007FF6156397F0]
+	(No symbol) [0x00007FF61561718A]
+	(No symbol) [0x00007FF61563851C]
+	(No symbol) [0x00007FF615616F33]
+	(No symbol) [0x00007FF6155E116F]
+	(No symbol) [0x00007FF6155E22D1]
+	GetHandleVerifier [0x00007FF615A9C96D+3378253]
+	GetHandleVerifier [0x00007FF615AE8497+3688311]
+	GetHandleVerifier [0x00007FF615ADD1CB+3642539]
+	GetHandleVerifier [0x00007FF61582A6B6+813462]
+	(No symbol) [0x00007FF6156EAB5F]
+	(No symbol) [0x00007FF6156E6B74]
+	(No symbol) [0x00007FF6156E6D10]
+	(No symbol) [0x00007FF6156D5C1F]
+	BaseThreadInitThunk [0x00007FFE56BBDBE7+23]
+	RtlUserThreadStart [0x00007FFE57745A4C+44]
+Traceback (most recent call last):
+  File "D:\PytestPython\DummySeleniumProject\tests\test_upload_dowloadWorks.py", line 39, in test_upload_download
+    message = TestUploadDownload.driver.execute_script("*return arguments[0].innerText;", toast_locator)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 414, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: Unexpected token '*'
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61576B095+29557]
+	(No symbol) [0x00007FF6156DFA50]
+	(No symbol) [0x00007FF61559B56A]
+	(No symbol) [0x00007FF6155A213E]
+	(No symbol) [0x00007FF6155A47F4]
+	(No symbol) [0x00007FF6156397F0]
+	(No symbol) [0x00007FF61561718A]
+	(No symbol) [0x00007FF61563851C]
+	(No symbol) [0x00007FF615616F33]
+	(No symbol) [0x00007FF6155E116F]
+	(No symbol) [0x00007FF6155E22D1]
+	GetHandleVerifier [0x00007FF615A9C96D+3378253]
+	GetHandleVerifier [0x00007FF615AE8497+3688311]
+	GetHandleVerifier [0x00007FF615ADD1CB+3642539]
+	GetHandleVerifier [0x00007FF61582A6B6+813462]
+	(No symbol) [0x00007FF6156EAB5F]
+	(No symbol) [0x00007FF6156E6B74]
+	(No symbol) [0x00007FF6156E6D10]
+	(No symbol) [0x00007FF6156D5C1F]
+	BaseThreadInitThunk [0x00007FFE56BBDBE7+23]
+	RtlUserThreadStart [0x00007FFE57745A4C+44]
+
+2024-10-21 23:34:07,589 :INFO :test_upload_download :File uploaded successfully: None
+2024-10-21 23:35:23,183 :INFO :test_upload_download :File uploaded successfully: None
+2024-10-21 23:36:24,875 :ERROR :test_upload_download :visibility_of_element_located() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "D:\PytestPython\DummySeleniumProject\tests\test_upload_dowloadWorks.py", line 36, in test_upload_download
+    TestUploadDownload.wait.until(EC.visibility_of_element_located(*toast_locator))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: visibility_of_element_located() takes 1 positional argument but 2 were given
+2024-10-21 23:37:19,617 :INFO :test_upload_download :File uploaded successfully: <selenium.webdriver.remote.webelement.WebElement (session="b6657cd484fe5d1a34af175d5b993882", element="f.E86050E6515E0B3C0A9ACA2181545E23.d.29834EA77566B1D8F533B52D83E87CC9.e.13")>
+2024-10-21 23:38:19,927 :INFO :test_upload_download :File uploaded successfully: Updated Excel Data Successfully.
+2024-10-22 01:35:36,735 :INFO :test_upload_download :File uploaded successfully: Updated Excel Data Successfully.
+2024-10-22 01:35:46,757 :ERROR :test_upload_download :WebElement.get_attribute() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "D:\PytestPython\DummySeleniumProject\tests\test_upload_dowloadWorks.py", line 44, in test_upload_download
+    price_attribute = TestUploadDownload.driver.find_element(By.XPATH,"//div[text()='Price']").get_attribute()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: WebElement.get_attribute() missing 1 required positional argument: 'name'
+2024-10-22 01:36:55,434 :INFO :test_upload_download :File uploaded successfully: Updated Excel Data Successfully.
+2024-10-22 01:37:05,490 :ERROR :test_upload_download :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='']/parent::div/parent::div/div[@id='4']"}
+  (Session info: chrome=129.0.6668.103); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF61576B095+29557]
+	(No symbol) [0x00007FF6156DFA50]
+	(No symbol) [0x00007FF61559B56A]
+	(No symbol) [0x00007FF6155EF695]
+	(No symbol) [0x00007FF6155EF8EC]
+	(No symbol) [0x00007FF61563B777]
+	(No symbol) [0x00007FF6156171CF]
+	(No symbol) [0x00007FF61563851C]
+	(No symbol) [0x00007FF615616F33]
+	(No symbol) [0x00007FF6155E116F]
+	(No symbol) [0x00007FF6155E22D1]
+	GetHandleVerifier [0x00007FF615A9C96D+3378253]
+	GetHandleVerifier [0x00007FF615AE8497+3688311]
+	GetHandleVerifier [0x00007FF615ADD1CB+3642539]
+	GetHandleVerifier [0x00007FF61582A6B6+813462]
+	(No symbol) [0x00007FF6156EAB5F]
+	(No symbol) [0x00007FF6156E6B74]
+	(No symbol) [0x00007FF6156E6D10]
+	(No symbol) [0x00007FF6156D5C1F]
+	BaseThreadInitThunk [0x00007FFE56BBDBE7+23]
+	RtlUserThreadStart [0x00007FFE57745A4C+44]
+Traceback (most recent call last):
+  File "D:\PytestPython\DummySeleniumProject\tests\test_upload_dowloadWorks.py", line 45, in test_upload_download
+    actualPriceText=TestUploadDownload.driver.find_element(By.XPATH,"//div[text()='"+fruit_name+"']/parent::div/parent::div/div[@id='"+price_attribute+"']").text
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='']/parent::div/parent::div/div[@id='4']"}
+  (Session info: chrome=129.0.6668.103); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF61576B095+29557]
+	(No symbol) [0x00007FF6156DFA50]
+	(No symbol) [0x00007FF61559B56A]
+	(No symbol) [0x00007FF6155EF695]
+	(No symbol) [0x00007FF6155EF8EC]
+	(No symbol) [0x00007FF61563B777]
+	(No symbol) [0x00007FF6156171CF]
+	(No symbol) [0x00007FF61563851C]
+	(No symbol) [0x00007FF615616F33]
+	(No symbol) [0x00007FF6155E116F]
+	(No symbol) [0x00007FF6155E22D1]
+	GetHandleVerifier [0x00007FF615A9C96D+3378253]
+	GetHandleVerifier [0x00007FF615AE8497+3688311]
+	GetHandleVerifier [0x00007FF615ADD1CB+3642539]
+	GetHandleVerifier [0x00007FF61582A6B6+813462]
+	(No symbol) [0x00007FF6156EAB5F]
+	(No symbol) [0x00007FF6156E6B74]
+	(No symbol) [0x00007FF6156E6D10]
+	(No symbol) [0x00007FF6156D5C1F]
+	BaseThreadInitThunk [0x00007FFE56BBDBE7+23]
+	RtlUserThreadStart [0x00007FFE57745A4C+44]
+
+2024-10-22 01:38:35,725 :INFO :test_upload_download :File uploaded successfully: Updated Excel Data Successfully.
+2024-10-22 01:38:45,806 :ERROR :test_upload_download :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Apple']/parent::div/parent::div/div[@id='4']"}
+  (Session info: chrome=129.0.6668.103); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF61576B095+29557]
+	(No symbol) [0x00007FF6156DFA50]
+	(No symbol) [0x00007FF61559B56A]
+	(No symbol) [0x00007FF6155EF695]
+	(No symbol) [0x00007FF6155EF8EC]
+	(No symbol) [0x00007FF61563B777]
+	(No symbol) [0x00007FF6156171CF]
+	(No symbol) [0x00007FF61563851C]
+	(No symbol) [0x00007FF615616F33]
+	(No symbol) [0x00007FF6155E116F]
+	(No symbol) [0x00007FF6155E22D1]
+	GetHandleVerifier [0x00007FF615A9C96D+3378253]
+	GetHandleVerifier [0x00007FF615AE8497+3688311]
+	GetHandleVerifier [0x00007FF615ADD1CB+3642539]
+	GetHandleVerifier [0x00007FF61582A6B6+813462]
+	(No symbol) [0x00007FF6156EAB5F]
+	(No symbol) [0x00007FF6156E6B74]
+	(No symbol) [0x00007FF6156E6D10]
+	(No symbol) [0x00007FF6156D5C1F]
+	BaseThreadInitThunk [0x00007FFE56BBDBE7+23]
+	RtlUserThreadStart [0x00007FFE57745A4C+44]
+Traceback (most recent call last):
+  File "D:\PytestPython\DummySeleniumProject\tests\test_upload_dowloadWorks.py", line 45, in test_upload_download
+    actualPriceText=TestUploadDownload.driver.find_element(By.XPATH,"//div[text()='"+fruit_name+"']/parent::div/parent::div/div[@id='"+price_attribute+"']").text
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\PytestPython\DummySeleniumProject\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Apple']/parent::div/parent::div/div[@id='4']"}
+  (Session info: chrome=129.0.6668.103); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF61576B095+29557]
+	(No symbol) [0x00007FF6156DFA50]
+	(No symbol) [0x00007FF61559B56A]
+	(No symbol) [0x00007FF6155EF695]
+	(No symbol) [0x00007FF6155EF8EC]
+	(No symbol) [0x00007FF61563B777]
+	(No symbol) [0x00007FF6156171CF]
+	(No symbol) [0x00007FF61563851C]
+	(No symbol) [0x00007FF615616F33]
+	(No symbol) [0x00007FF6155E116F]
+	(No symbol) [0x00007FF6155E22D1]
+	GetHandleVerifier [0x00007FF615A9C96D+3378253]
+	GetHandleVerifier [0x00007FF615AE8497+3688311]
+	GetHandleVerifier [0x00007FF615ADD1CB+3642539]
+	GetHandleVerifier [0x00007FF61582A6B6+813462]
+	(No symbol) [0x00007FF6156EAB5F]
+	(No symbol) [0x00007FF6156E6B74]
+	(No symbol) [0x00007FF6156E6D10]
+	(No symbol) [0x00007FF6156D5C1F]
+	BaseThreadInitThunk [0x00007FFE56BBDBE7+23]
+	RtlUserThreadStart [0x00007FFE57745A4C+44]
+
+2024-10-22 01:42:32,382 :INFO :test_upload_download :File uploaded successfully: Updated Excel Data Successfully.
+2024-10-22 01:42:42,456 :INFO :test_upload_download :345
+2024-10-22 01:43:49,815 :INFO :test_upload_download :File uploaded successfully: Updated Excel Data Successfully.
+2024-10-22 01:43:59,888 :INFO :test_upload_download :the actual price of theApple = 345
+2024-10-22 01:44:22,933 :INFO :test_upload_download :File uploaded successfully: Updated Excel Data Successfully.
+2024-10-22 01:44:33,015 :INFO :test_upload_download :The actual price of the Apple = 345
